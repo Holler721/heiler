@@ -688,7 +688,7 @@ function genPassword() {
    Der Hub signiert kurzlebige Tokens (HMAC, Secret HUB_SSO_SECRET, in beiden Seiten gleich).
    Konten, die so entstehen, tragen hub:true. Lokale Konten (Owner, Mace Windu, selbst angelegte) werden nie übernommen. */
 const HUB_SECRET = process.env.HUB_SSO_SECRET || '';
-const HUB_AUD = 'archiv';
+const HUB_AUD = 'heiler';
 const HUB_URL = (process.env.HUB_URL || '').replace(/\/+$/, '');
 const hubSeen = new Map();
 function hubVerify(tok, kind) {
